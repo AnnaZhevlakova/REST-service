@@ -5,7 +5,7 @@ public class ErrorResponse {
     private Integer id;
 
 
-    public ErrorResponse(String message,Integer id){
+    public ErrorResponse(String message, Integer id) {
         this.message = message;
         this.id = id;
     }

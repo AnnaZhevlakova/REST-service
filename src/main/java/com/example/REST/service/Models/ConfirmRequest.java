@@ -5,20 +5,20 @@ public class ConfirmRequest {
     private String code;
 
 
-    public ConfirmRequest(){
+    public ConfirmRequest() {
 
     }
 
-    public ConfirmRequest(String operationId, String code){
+    public ConfirmRequest(String operationId, String code) {
         this.operationId = operationId;
         this.code = code;
     }
 
-    public String getOperationId(){
+    public String getOperationId() {
         return operationId;
     }
 
-    public void setOperationId(String operationId){
+    public void setOperationId(String operationId) {
         this.operationId = operationId;
     }
 
@@ -26,7 +26,7 @@ public class ConfirmRequest {
         return code;
     }
 
-    public void setCode(String code){
+    public void setCode(String code) {
         this.code = code;
     }
 }

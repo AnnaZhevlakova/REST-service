@@ -4,11 +4,11 @@ public class Amount {
     private long value;
     private String currency;
 
-    public Amount(){
+    public Amount() {
 
     }
 
-    public Amount(long value, String currency){
+    public Amount(long value, String currency) {
         this.value = value;
         this.currency = currency;
     }

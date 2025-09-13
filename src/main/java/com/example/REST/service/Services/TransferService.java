@@ -8,11 +8,11 @@ import org.springframework.stereotype.Service;
 
 @Service
 public class TransferService {
-    public TransferResponse transfer( TransferRequest request) {
+    public TransferResponse transfer(TransferRequest request) {
         throw new UnsupportedOperationException("Method not implemented yet");
     }
 
-    public TransferResponse confirmOperation( ConfirmRequest request) {
+    public TransferResponse confirmOperation(ConfirmRequest request) {
         throw new UnsupportedOperationException("Method not implemented yet");
     }
 }

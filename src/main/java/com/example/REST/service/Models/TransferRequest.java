@@ -7,11 +7,11 @@ public class TransferRequest {
     private String cardToNumber;
     private Amount amount;
 
-    public TransferRequest(){
+    public TransferRequest() {
 
     }
 
-    public TransferRequest(String cardFromNumber,String cardFromValidTill,String cardFromCVV,String cardToNumber,Amount amount ){
+    public TransferRequest(String cardFromNumber, String cardFromValidTill, String cardFromCVV, String cardToNumber, Amount amount) {
         this.cardFromNumber = cardFromNumber;
         this.cardFromValidTill = cardFromValidTill;
         this.cardFromCVV = cardFromCVV;
@@ -21,10 +21,11 @@ public class TransferRequest {
     }
 
 
-    public String getCardFromNumber(){
+    public String getCardFromNumber() {
         return cardFromNumber;
     }
-    public void setCardFromNumber(String cardFromNumber){
+
+    public void setCardFromNumber(String cardFromNumber) {
         this.cardFromNumber = cardFromNumber;
     }
 
@@ -36,27 +37,27 @@ public class TransferRequest {
         this.cardFromValidTill = cardFromValidTill;
     }
 
-    public String getCardFromCVV(){
+    public String getCardFromCVV() {
         return cardFromCVV;
     }
 
-    public  void setCardFromCVV(String cardFromCVV){
+    public void setCardFromCVV(String cardFromCVV) {
         this.cardFromCVV = cardFromCVV;
     }
 
-    public String getCardToNumber(){
+    public String getCardToNumber() {
         return cardToNumber;
     }
 
-    public void setCardToNumber(String cardToNumber){
+    public void setCardToNumber(String cardToNumber) {
         this.cardToNumber = cardToNumber;
     }
 
-    public Amount getAmount(){
+    public Amount getAmount() {
         return amount;
     }
 
-    public void setAmount(Amount amount){
+    public void setAmount(Amount amount) {
         this.amount = amount;
     }
 }
