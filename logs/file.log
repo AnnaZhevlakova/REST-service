@@ -1,0 +1,30 @@
+2025-09-13 13:50:44Z [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-13 13:50:44Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Starting RestServiceApplicationTests using Java 23.0.1 with PID 5688 (started by admin in C:\Users\admin\Desktop\origin\REST-service)
+2025-09-13 13:50:44Z [main] INFO  c.e.R.s.RestServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-13 13:50:46Z [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-09-13 13:50:46Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Started RestServiceApplicationTests in 2.625 seconds (process running for 3.77)
+2025-09-13 13:52:20Z [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-13 13:52:20Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Starting RestServiceApplicationTests using Java 23.0.1 with PID 29960 (started by admin in C:\Users\admin\Desktop\origin\REST-service)
+2025-09-13 13:52:20Z [main] INFO  c.e.R.s.RestServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-13 13:52:22Z [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-09-13 13:52:22Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Started RestServiceApplicationTests in 2.581 seconds (process running for 3.701)
+2025-09-13 13:55:34Z [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-13 13:55:34Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Starting RestServiceApplicationTests using Java 23.0.1 with PID 26356 (started by admin in C:\Users\admin\Desktop\origin\REST-service)
+2025-09-13 13:55:34Z [main] INFO  c.e.R.s.RestServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-13 13:55:37Z [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-09-13 13:55:37Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Started RestServiceApplicationTests in 2.614 seconds (process running for 3.727)
+2025-09-13 14:01:28Z [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-13 14:01:28Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Starting RestServiceApplicationTests using Java 23.0.1 with PID 27252 (started by admin in C:\Users\admin\Desktop\origin\REST-service)
+2025-09-13 14:01:28Z [main] INFO  c.e.R.s.RestServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-13 14:01:30Z [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-09-13 14:01:30Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Started RestServiceApplicationTests in 2.659 seconds (process running for 3.776)
+2025-09-13 14:03:40Z [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-13 14:03:40Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Starting RestServiceApplicationTests using Java 23.0.1 with PID 6692 (started by admin in C:\Users\admin\Desktop\origin\REST-service)
+2025-09-13 14:03:40Z [main] INFO  c.e.R.s.RestServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-13 14:03:42Z [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-09-13 14:03:42Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Started RestServiceApplicationTests in 2.564 seconds (process running for 3.677)
+2025-09-13 14:10:13Z [background-preinit] INFO  o.h.validator.internal.util.Version - HV000001: Hibernate Validator 8.0.3.Final
+2025-09-13 14:10:13Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Starting RestServiceApplicationTests using Java 23.0.1 with PID 16476 (started by admin in C:\Users\admin\Desktop\origin\REST-service)
+2025-09-13 14:10:13Z [main] INFO  c.e.R.s.RestServiceApplicationTests - No active profile set, falling back to 1 default profile: "default"
+2025-09-13 14:10:15Z [main] INFO  o.s.b.a.e.web.EndpointLinksResolver - Exposing 1 endpoint beneath base path '/actuator'
+2025-09-13 14:10:15Z [main] INFO  c.e.R.s.RestServiceApplicationTests - Started RestServiceApplicationTests in 2.752 seconds (process running for 3.843)
