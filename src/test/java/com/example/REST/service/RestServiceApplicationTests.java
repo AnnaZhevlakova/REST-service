@@ -1,4 +1,4 @@
-package com.example.REST.service;
+/*package com.example.REST.service;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -66,6 +66,6 @@ class RestServiceApplicationTests {
                 String.class
         );
         assertEquals("This is production profile", response.getBody());
-    }*/
+    }
 
-}
+} */

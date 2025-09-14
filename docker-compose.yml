@@ -1,8 +1,8 @@
-version: '3.8'
+
 
 services:
-  REST-service:
+  appservice:
     build: ./
     ports:
       - "5500:8080"
-    container_name: REST-service
+    container_name: appservice

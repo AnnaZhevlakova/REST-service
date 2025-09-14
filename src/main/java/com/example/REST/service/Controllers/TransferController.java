@@ -22,7 +22,7 @@ public class TransferController {
         this.service = service;
     }
 
-    @PostMapping("/transfer")
+    @PostMapping()
     public TransferResponse transfer(@RequestBody TransferRequest request) throws Exception {
         var result = service.transfer(request);
         var lodTransfer = new TransferLog(
