@@ -22,7 +22,7 @@ class RestServiceApplicationTests {
     TestRestTemplate restTemplate;
 
 
-   @Container
+    @Container
     private final GenericContainer<?> devApp = new GenericContainer<>("rest_service_test")
             .withExposedPorts(5500);
 

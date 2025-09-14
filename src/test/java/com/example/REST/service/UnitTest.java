@@ -1,4 +1,0 @@
-package com.example.REST.service;
-
-public class UnitTest {
-}

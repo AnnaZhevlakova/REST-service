@@ -7,12 +7,15 @@ public class OperationCodeEntity {
     public long getId() {
         return id;
     }
+
     public void setId(long id) {
         this.id = id;
     }
+
     public String getOperationCode() {
         return operationCode;
     }
+
     public void setOperationCode(String operationCode) {
         this.operationCode = operationCode;
     }
