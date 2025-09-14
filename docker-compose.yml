@@ -4,5 +4,5 @@ services:
   appservice:
     build: ./
     ports:
-      - "5500:8080"
+      - "5500:5500"
     container_name: appservice

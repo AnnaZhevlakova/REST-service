@@ -2,7 +2,7 @@ package com.example.REST.service.ExceptionHandler;
 
 
 import com.example.REST.service.Controllers.TransferController;
-import com.example.REST.service.Exceptions.AppException;
+import com.example.REST.service.Exceptions.UserException;
 
 import com.example.REST.service.Models.ErrorResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -17,8 +17,8 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 public class GlobalExceptionHandler {
     private static final Logger logger = LogManager.getLogger(TransferController.class);
 
-    @ExceptionHandler(AppException.class)
-    public ResponseEntity<String> handlerAppException(AppException ex) throws Exception {
+    @ExceptionHandler(UserException.class)
+    public ResponseEntity<String> handlerAppException(UserException ex) throws Exception {
         logger.error(String.format("message: %s | stackTrace: %s", ex.getMessage(), ex.getStackTrace().toString()));
 
         ObjectMapper mapper = new ObjectMapper();
@@ -34,7 +34,7 @@ public class GlobalExceptionHandler {
 
         ObjectMapper mapper = new ObjectMapper();
 
-        String responseJson = mapper.writeValueAsString(new ErrorResponse(ex.getMessage(), 0));
+        String responseJson = mapper.writeValueAsString(new ErrorResponse("Что то пошло не так.", 0));
         return ResponseEntity.status(HttpStatusCode.valueOf(500)).body(responseJson);
 
     }
