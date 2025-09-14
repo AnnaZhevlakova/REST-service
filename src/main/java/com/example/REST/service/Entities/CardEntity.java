@@ -1,12 +1,16 @@
 package com.example.REST.service.Entities;
 
 
+import java.time.LocalDateTime;
+
 public class CardEntity {
     private long id;
     private String cardName;
     private String cvv;
     private long amount;
     private long currencyId;
+    private LocalDateTime cardValidTill;
+
 
     public long getId() {
         return id;
@@ -46,5 +50,13 @@ public class CardEntity {
 
     public void setCurrencyId(long currencyId) {
         this.currencyId = currencyId;
+    }
+
+    public LocalDateTime getCardValidTill() {
+        return cardValidTill;
+    }
+
+    public void setCardValidTill(LocalDateTime cardValidTill) {
+        this.cardValidTill = cardValidTill;
     }
 }
