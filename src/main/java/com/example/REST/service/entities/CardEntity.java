@@ -1,4 +1,4 @@
-package com.example.REST.service.Entities;
+package com.example.REST.service.entities;
 
 
 import java.time.LocalDateTime;

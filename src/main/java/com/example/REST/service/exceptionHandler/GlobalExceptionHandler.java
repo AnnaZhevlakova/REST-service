@@ -1,16 +1,15 @@
-package com.example.REST.service.ExceptionHandler;
+package com.example.REST.service.exceptionHandler;
 
 
-import com.example.REST.service.Controllers.TransferController;
-import com.example.REST.service.Exceptions.UserException;
+import com.example.REST.service.controllers.TransferController;
+import com.example.REST.service.exceptions.UserException;
 
-import com.example.REST.service.Models.ErrorResponse;
+import com.example.REST.service.models.ErrorResponse;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.http.HttpStatusCode;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.bind.annotation.RestControllerAdvice;
 

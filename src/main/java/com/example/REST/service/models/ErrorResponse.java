@@ -1,4 +1,4 @@
-package com.example.REST.service.Models;
+package com.example.REST.service.models;
 
 public class ErrorResponse {
     private String message;

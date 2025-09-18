@@ -1,4 +1,4 @@
-package com.example.REST.service.Models;
+package com.example.REST.service.models;
 
 public class TransferResponse {
     private String operationId;

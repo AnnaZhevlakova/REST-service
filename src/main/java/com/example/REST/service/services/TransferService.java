@@ -1,8 +1,8 @@
-package com.example.REST.service.Services;
+package com.example.REST.service.services;
 
-import com.example.REST.service.Models.ConfirmRequest;
-import com.example.REST.service.Models.TransferRequest;
-import com.example.REST.service.Models.TransferResponse;
+import com.example.REST.service.models.ConfirmRequest;
+import com.example.REST.service.models.TransferRequest;
+import com.example.REST.service.models.TransferResponse;
 import org.springframework.stereotype.Service;
 
 

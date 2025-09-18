@@ -1,4 +1,4 @@
-package com.example.REST.service.Exceptions;
+package com.example.REST.service.exceptions;
 
 public class UserException extends RuntimeException {
     public UserException(String message) {

@@ -1,10 +1,10 @@
-package com.example.REST.service.Controllers;
+package com.example.REST.service.controllers;
 
-import com.example.REST.service.Models.ConfirmRequest;
-import com.example.REST.service.Models.TransferLog;
-import com.example.REST.service.Models.TransferRequest;
-import com.example.REST.service.Models.TransferResponse;
-import com.example.REST.service.Services.TransferService;
+import com.example.REST.service.models.ConfirmRequest;
+import com.example.REST.service.models.TransferLog;
+import com.example.REST.service.models.TransferRequest;
+import com.example.REST.service.models.TransferResponse;
+import com.example.REST.service.services.TransferService;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.web.bind.annotation.PostMapping;

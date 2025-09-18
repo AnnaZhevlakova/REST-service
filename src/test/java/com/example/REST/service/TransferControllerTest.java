@@ -1,11 +1,11 @@
 package com.example.REST.service;
 
-import com.example.REST.service.Controllers.TransferController;
-import com.example.REST.service.Models.Amount;
-import com.example.REST.service.Models.ConfirmRequest;
-import com.example.REST.service.Models.TransferRequest;
-import com.example.REST.service.Models.TransferResponse;
-import com.example.REST.service.Services.TransferService;
+import com.example.REST.service.controllers.TransferController;
+import com.example.REST.service.models.Amount;
+import com.example.REST.service.models.ConfirmRequest;
+import com.example.REST.service.models.TransferRequest;
+import com.example.REST.service.models.TransferResponse;
+import com.example.REST.service.services.TransferService;
 import org.apache.logging.log4j.Logger;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
@@ -111,7 +111,7 @@ class TransferControllerTest {
 
         when(transferService.confirmOperation(any(ConfirmRequest.class))).thenReturn(transferResponse);
 
-        
+
         mockMvc.perform(post("/transfer/confirmOperation")
                         .contentType(MediaType.APPLICATION_JSON)
                         .content("{\"operationId\":\"test-operation-id\",\"code\":\"1234\"}"))

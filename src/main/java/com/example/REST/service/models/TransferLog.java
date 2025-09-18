@@ -1,4 +1,4 @@
-package com.example.REST.service.Models;
+package com.example.REST.service.models;
 
 import java.time.ZoneOffset;
 import java.time.ZonedDateTime;

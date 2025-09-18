@@ -1,4 +1,4 @@
-package com.example.REST.service.Config;
+package com.example.REST.service.сonfig;
 
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
