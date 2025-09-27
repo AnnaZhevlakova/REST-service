@@ -1,6 +1,7 @@
 package com.example.REST.service.exceptionHandler;
 
 
+import com.example.REST.service.StackTraceUtil;
 import com.example.REST.service.controllers.TransferController;
 import com.example.REST.service.exceptions.UserException;
 
@@ -19,22 +20,22 @@ public class GlobalExceptionHandler {
 
     @ExceptionHandler(UserException.class)
     public ResponseEntity<String> handlerAppException(UserException ex) throws Exception {
-        logger.error(String.format("message: %s | stackTrace: %s", ex.getMessage(), ex.getStackTrace().toString()));
+        logger.error(String.format("message: %s | stackTrace: %s", ex.getMessage(), StackTraceUtil.getStackTraceAsString(ex)));
 
         ObjectMapper mapper = new ObjectMapper();
 
-        String responseJson = mapper.writeValueAsString(new ErrorResponse(ex.getMessage(), 0));
+        String responseJson = mapper.writeValueAsString(new ErrorResponse(ex.getMessage(), 400));
         return ResponseEntity.badRequest().body(responseJson);
 
     }
 
     @ExceptionHandler(Exception.class)
     public ResponseEntity<String> handlerGlobalException(Exception ex) throws Exception {
-        logger.error(String.format("message: %s | stackTrace: %s", ex.getMessage(), ex.getStackTrace().toString()));
+        logger.error(String.format("message: %s | stackTrace: %s", ex.getMessage(), StackTraceUtil.getStackTraceAsString(ex)));
 
         ObjectMapper mapper = new ObjectMapper();
 
-        String responseJson = mapper.writeValueAsString(new ErrorResponse("Что то пошло не так.", 0));
+        String responseJson = mapper.writeValueAsString(new ErrorResponse("Что то пошло не так.", 500));
         return ResponseEntity.status(HttpStatusCode.valueOf(500)).body(responseJson);
 
     }

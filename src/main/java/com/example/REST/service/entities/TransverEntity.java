@@ -1,13 +1,45 @@
 package com.example.REST.service.entities;
 
+import com.example.REST.service.enums.OperationState;
+import com.example.REST.service.models.Amount;
+
 public class TransverEntity {
     private long id;
-    private String operationId;
-    private long sourceCardId;
-    private long destinationCardId;
-    private long amount;
-    private long currencyId;
-    private long codeId;
+    private String cardFromNumber;
+    private String cardFromValidTill;
+    private String cardFromCVV;
+    private String cardToNumber;
+    private Amount amount;
+    private OperationState state;
+    private String confirmCode;
+
+    public TransverEntity() {
+
+    }
+    public TransverEntity(String cardFromNumber, String cardFromValidTill, String cardFromCVV, String cardToNumber, Amount amount) {
+        this.cardFromNumber = cardFromNumber;
+        this.cardFromValidTill = cardFromValidTill;
+        this.cardFromCVV = cardFromCVV;
+        this.cardToNumber = cardToNumber;
+        this.amount = amount;
+
+    }
+
+    public String getConfirmCode() {
+        return confirmCode;
+    }
+
+    public void setConfirmCode(String confirmCode) {
+        this.confirmCode = confirmCode;
+    }
+
+    public OperationState getState() {
+        return state;
+    }
+
+    public void setState(OperationState state) {
+        this.state = state;
+    }
 
     public long getId() {
         return id;
@@ -17,51 +49,43 @@ public class TransverEntity {
         this.id = id;
     }
 
-    public String getOperationId() {
-        return operationId;
+    public String getCardFromNumber() {
+        return cardFromNumber;
     }
 
-    public void setOperationId(String operationId) {
-        this.operationId = operationId;
+    public void setCardFromNumber(String cardFromNumber) {
+        this.cardFromNumber = cardFromNumber;
     }
 
-    public long getSourceCardId() {
-        return sourceCardId;
+    public String getCardFromValidTill() {
+        return cardFromValidTill;
     }
 
-    public void setSourceCardId(long sourceCardId) {
-        this.sourceCardId = sourceCardId;
+    public void setCardFromValidTill(String cardFromValidTill) {
+        this.cardFromValidTill = cardFromValidTill;
     }
 
-    public long getDestinationCardId() {
-        return destinationCardId;
+    public String getCardFromCVV() {
+        return cardFromCVV;
     }
 
-    public void setDestinationCardId(long destinationCardId) {
-        this.destinationCardId = destinationCardId;
+    public void setCardFromCVV(String cardFromCVV) {
+        this.cardFromCVV = cardFromCVV;
     }
 
-    public long getAmount() {
+    public String getCardToNumber() {
+        return cardToNumber;
+    }
+
+    public void setCardToNumber(String cardToNumber) {
+        this.cardToNumber = cardToNumber;
+    }
+
+    public Amount getAmount() {
         return amount;
     }
 
-    public void setAmount(long amount) {
+    public void setAmount(Amount amount) {
         this.amount = amount;
-    }
-
-    public long getCurrencyId() {
-        return currencyId;
-    }
-
-    public void setCurrencyId(long currencyId) {
-        this.currencyId = currencyId;
-    }
-
-    public long getCodeId() {
-        return codeId;
-    }
-
-    public void setCodeId(long codeId) {
-        this.codeId = codeId;
     }
 }

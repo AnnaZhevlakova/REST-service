@@ -9,11 +9,9 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/transfer")
 public class TransferController {
     private TransferService service;
     private static final Logger logger = LogManager.getLogger(TransferController.class);
@@ -22,7 +20,7 @@ public class TransferController {
         this.service = service;
     }
 
-    @PostMapping()
+    @PostMapping("/transfer")
     public TransferResponse transfer(@RequestBody TransferRequest request) throws Exception {
         var result = service.transfer(request);
         var lodTransfer = new TransferLog(
@@ -39,6 +37,7 @@ public class TransferController {
     @PostMapping("/confirmOperation")
     public TransferResponse confirmOperation(@RequestBody ConfirmRequest request) {
         var result = service.confirmOperation(request);
+        logger.info(String.format("Операци прошла успешно. %s",result.getOperationId()));
         return result;
     }
 }

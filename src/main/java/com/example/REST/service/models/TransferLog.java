@@ -27,12 +27,13 @@ public class TransferLog {
     public String getLogText() {
         String logEntry = String.format(
                 "Дата: %s | Время: %s | Карта, с которой было списание : %s | Карта зачисления: %s " +
-                        "| Сумма: %d %s | Комиссия: %.2f | Результат операции: %s",
+                        "| Сумма: %s %s | Комиссия: %s | Результат операции: %s",
                 date,
                 time,
                 sourceCard,
                 distinationCard,
                 amount.getValue(),
+                amount.getCurrency(),
                 commission,
                 operationId
         );
