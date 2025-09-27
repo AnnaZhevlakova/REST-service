@@ -20,7 +20,7 @@ curl --location 'http://localhost:5500/transfer' \
 }
 }'
 
-curl --location 'http://localhost:5500/transfer/confirmOperation' \
+curl --location 'http://localhost:5500/confirmOperation' \
 --header 'accept: application/json' \
 --header 'Content-Type: application/json' \
 --data '{
