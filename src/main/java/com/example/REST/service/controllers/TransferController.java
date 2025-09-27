@@ -37,7 +37,7 @@ public class TransferController {
     @PostMapping("/confirmOperation")
     public TransferResponse confirmOperation(@RequestBody ConfirmRequest request) {
         var result = service.confirmOperation(request);
-        logger.info(String.format("Операци прошла успешно. %s",result.getOperationId()));
+        logger.info(String.format("Операци прошла успешно. %s", result.getOperationId()));
         return result;
     }
 }

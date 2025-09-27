@@ -16,6 +16,7 @@ public class TransverEntity {
     public TransverEntity() {
 
     }
+
     public TransverEntity(String cardFromNumber, String cardFromValidTill, String cardFromCVV, String cardToNumber, Amount amount) {
         this.cardFromNumber = cardFromNumber;
         this.cardFromValidTill = cardFromValidTill;
